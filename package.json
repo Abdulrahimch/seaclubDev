@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3033",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build": "next build && next export",
-    "postbuild": "next-sitemap",
-    "export": "npm run build && next export && mv build _static"
+    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
