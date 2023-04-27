@@ -1,0 +1,66 @@
+.member {
+	border-radius: 2rem;
+	width: 20rem;
+    height: 27rem;
+	position: relative;
+	overflow: hidden;
+	margin:1rem;
+	font-family: var(--helvetica-font-family);
+}
+.profile_img {
+	border-radius: 2rem;
+	object-fit: cover;
+	transition: all 0.7s ease-in-out;
+	width:20rem;
+	height: 27rem;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.linkedin_logo {
+	width: 25px;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+    
+}
+.member_info {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 2.2rem;
+}
+.member_name {
+	font-size: 1.3rem;
+	color: white;
+}
+.member_role {
+	font-size: 1.3rem;
+}
+.member:hover .profile_img,
+.member:focus .profile_img {
+	transform: scale(1.1);
+	transition: all 0.7s ease-in-out;
+	filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.member:hover .linkedin_logo,.member:focus .linkedin_logo{
+    z-index: 1;
+}
+
+/* For mobile */
+@media (max-width: 700px){
+	.member{
+		width: 13rem;
+		height: 16rem;
+	}
+	.profile_img{
+		width: 13rem;
+		height: 16rem;
+	}
+	.member_name, .member_role {
+		display: none;
+	}
+}

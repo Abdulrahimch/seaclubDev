@@ -1,0 +1,102 @@
+.productContainer {
+  padding-top: 120px;
+}
+/* header text and text CSS */
+.topText {
+  padding: 31px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+.topTextH1Container{
+  width: 50%;
+}
+.topTextH1{
+  max-width: 400px;
+  
+}
+.topTextPContainer{
+  width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.topTextP {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-left: 175px;
+}
+/* header text and text CSS */
+
+
+.mainContent {
+  background-color: #ffffff;
+  border-radius: 40px 40px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  height: 100vh;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 315px auto;
+  color: black;
+}
+.sidebar {
+  padding-left: 15px;
+  /* border: 1px solid red; */
+}
+
+.topText h1 {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  max-width: 300px;
+}
+
+
+@media only screen and (max-width: 40em) {
+  .productContainer {
+    padding-top: 150px;
+  }
+  .topText {
+    margin-top: 50px;
+    margin-left: 18px;
+    display: flex;
+  }
+  .topText h1 {
+    font-family: "Helvetica Now Display Medium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    max-width: 300px;
+  }
+  .topText p {
+    margin: 0;
+    font-family: "Helvetica Now Display Medium", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    text-transform: none;
+    width: 280px;
+    margin-top: 17px;
+  }
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sidebar {
+    padding: 0;
+  }
+  .content {
+    padding: 0 16px;
+  }
+}
